@@ -1,0 +1,105 @@
+h1 {
+  color: #9cc7df;
+  text-align: center;
+  text-decoration: none;
+  text-decoration-color: black;
+}
+
+body {
+  background-color: black;
+  font-family: hack;
+  min-height: 100%;
+}
+
+html {
+  min-height: 100%;
+  font-family: hack;
+}
+
+h2 {
+  color: #9cc7df;
+  text-align: center;
+  text-decoration: none;
+}
+
+a {
+  color: #9cc7df;
+  text-decoration: none;
+  text-align: center;
+}
+
+.searchstyle {
+  color: #9cc7df;
+  text-align: center;
+  text-decoration: none;
+  background-color: #151515;
+  border: 0px;
+  font-family: hack;
+}
+
+.timestyle {
+  color: black;
+  text-align: right;
+  text-decoration: none;
+  background-color: black;
+  border: 0px;
+  font-family: hack;
+  float: right;
+  margin-right: 17px;
+}
+
+.datestyle {
+  color: #9cc7df;
+  text-align: left;
+  text-decoration: none;
+  background-color: black;
+  border: 0px;
+  font-family: hack;
+  float: left;
+  margin-left: 17px;
+  font-weight: bold;
+}
+
+.barstyle {
+  color: #9cc7df;
+  text-align: center;
+  text-decoration: none;
+  background-color: black;
+  border: 0px;
+  font-family: hack;
+}
+
+img {
+  max-width: 600px;
+  position: absolute;
+  z-index: -1;
+}
+
+* {
+  margin: 0;
+  border: 0;
+}
+.xkcd{
+  width: 50%;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.dropdown {
+    color: #9cc7df;
+    text-align: center;
+    text-decoration: none;
+}
+.dropdown-content {
+    display: none;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
