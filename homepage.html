@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="homepagestyle.css">
+  <title>Toby's Homepage</title>
+  <script type="text/javascript">
+  function startTime()
+  {
+  var today=new Date();
+  var h=today.getHours();
+  var m=today.getMinutes();
+  var s=today.getSeconds();
+  n =  new Date();
+  y = n.getFullYear();
+  m = n.getMonth() + 1;
+  d = n.getDate();
+  // add a zero in front of numbers<10
+  m=checkTime(m);
+  s=checkTime(s);
+  document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+  document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+  t=setTimeout('startTime()',500);
+  }
+  function checkTime(i)
+  {
+  if (i<10)
+  {
+  i="0" + i;
+  }
+  return i;
+  }
+
+  </script>
+</head>
+
+<body onpageshow="startTime()"><br>
+  <a href="https://calendar.google.com"><div id="date" class="datestyle"></div></a>
+  <div id="txt" class="timestyle"></div>
+  <br><br>
+  <h1>welcome back toby</h1>
+  <br><br><br>
+  <form method="get" action="http://www.google.com/search" class="barstyle">
+        <input autofocus name="q" type="text" class="searchstyle" maxlength="255" onfocus="this.value=''" value="search">
+  </form><br><br><br>
+  <h2 class='dropdown'><a href="https://4chan.org">fourchan</a>
+    <div class="dropdown-content">
+    <br><a href='https://boards.4chan.org/g/'>/g/</a><br><br>
+    <a href='https://boards.4chan.org/sci/'>/sci/</a><br><br>
+    <a href='https://boards.4chan.org/fa/'>/fa/</a>
+    </div>
+  </h2><br><br>
+  <h2><a href="https://mail.google.com">gmail</a></h2><br><br>
+  <h2><a href="https://web.whatsapp.com/">whatsapp</a></h2><br><br>
+  <h2><a href="https://www.youtube.com">youtube</a></h2><br><br>
+  <h2><a href="https://www.twitch.tv/directory/following">twitch</a></h2><br><br>
+  <h2><a href="https://www.reddit.com">reddit</a></h2><br><br>
+  <h2><a href="https://play.typeracer.com">typeracer</a></h2><br><br>
+  <h2><a href="https://outlook.office365.com">outlook</a></h2><br><br>
+  <h2><a href="https://www.twitter.com">twitter</a></h2><br><br>
+  <h2><a href="https://radley.fireflycloud.net/dashboard">firefly</a></h2><br><br>
+  <center><a href='https://www.xkcd.com'><img class="xkcd" src='tar_2x.png'></img></a></center>
+</body>
+
+</html>

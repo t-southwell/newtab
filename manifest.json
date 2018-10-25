@@ -1,0 +1,15 @@
+{
+  "name": "My custom new tab page",
+  "description": "Overrides the new tab page",
+  "version": "0.1",
+  "incognito": "split",
+  "chrome_url_overrides": {
+    "newtab": "homepage.html"
+  },
+  "manifest_version": 2,
+  "content_scripts": [{
+     "js": ["dateandtime.js", "jquery.min.js"],
+     "matches": ["http://*/*", "https://*/*"]
+   }],
+   "content_security_policy":"script-src 'self' https://apis.google.com; object-src 'self'"
+}
