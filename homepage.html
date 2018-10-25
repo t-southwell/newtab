@@ -16,7 +16,6 @@
   y = n.getFullYear();
   m = n.getMonth() + 1;
   d = n.getDate();
-  // add a zero in front of numbers<10
   m=checkTime(m);
   s=checkTime(s);
   document.getElementById('txt').innerHTML=h+":"+m+":"+s;
@@ -25,7 +24,7 @@
   }
   function checkTime(i)
   {
-  if (i<10)
+  if (i<10) // add a zero in front of numbers<10
   {
   i="0" + i;
   }
