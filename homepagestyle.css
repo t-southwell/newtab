@@ -16,16 +16,11 @@ html {
   font-family: hack;
 }
 
-h2 {
-  color: #9cc7df;
-  text-align: center;
-  text-decoration: none;
-}
+
 
 a {
   color: #9cc7df;
   text-decoration: none;
-  text-align: center;
 }
 
 .searchstyle {
@@ -38,14 +33,7 @@ a {
 }
 
 .timestyle {
-  color: black;
-  text-align: right;
-  text-decoration: none;
-  background-color: black;
-  border: 0px;
-  font-family: hack;
-  float: right;
-  margin-right: 17px;
+  display: none;
 }
 
 .datestyle {
@@ -65,8 +53,8 @@ a {
   text-align: center;
   text-decoration: none;
   background-color: black;
-  border: 0px;
   font-family: hack;
+
 }
 
 img {
@@ -86,20 +74,50 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-.dropdown {
-    color: #9cc7df;
-    text-align: center;
-    text-decoration: none;
-}
-.dropdown-content {
-    display: none;
-    background-color: black;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
+
+li {
+   color: #9cc7df;
+   padding: 16px;
+   font-size: 24px;
+   text-align: center;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+.dropbtn {
+   background-color: black;
+   text-align: center;
+   color: #9cc7df;
+   font-size: 24px;
+   cursor: pointer;
+
 }
+
+.dropbtn:hover, .dropbtn:focus {
+   background-color: black;
+   color: #9cc7df;
+   text-align: center;
+}
+
+.dropdown {
+   position: relative;
+   display: inline-block;
+}
+
+.dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: black;
+   width: 100%;
+   z-index: 1;
+   font-size: 12px;
+}
+
+.dropdown-content a {
+   color: #9cc7df;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.show {display:block;}
